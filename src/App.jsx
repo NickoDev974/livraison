@@ -12,7 +12,9 @@ function App() {
       {/* <section> */}
       <div className="header">
         <h1>Univers Aquatique Livraison</h1>
-        <img className="logo" src="../../../public/no-pict.jpg" />
+        <img className="logo" src="/livraison/no-pict.jpg" alt="No Pict" />
+
+        {/* <img className="logo" src="../../../public/no-pict.jpg" /> */}
       </div>
       <Formulaire />
       {/* </section> */}

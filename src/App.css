@@ -42,7 +42,8 @@
 }
 
 section {
-  border: white 2px solid;
+  background-color: white;
+  border: rgb(6, 6, 6) 2px solid;
   border-radius: 20px;
   margin: 2rem;
 }
@@ -62,9 +63,15 @@ section {
     input {
       width: 70%;
       margin: 5px 2rem;
+      background-color: aliceblue;
+      color: black;
+      font-weight: bold;
+      font-size: large;
     }
     label {
       text-align: end;
+      font-weight: bold;
+      font-size: large;
     }
   }
 }
@@ -77,6 +84,14 @@ section {
     margin-left: 5rem;
     input {
       margin: 5px 2rem;
+      background-color: aliceblue;
+      color: black;
+      font-weight: bold;
+      font-size: large;
+    }
+    label {
+      font-weight: bold;
+      font-size: large;
     }
   }
 }
@@ -93,5 +108,34 @@ section {
     font-size: 0.8rem;
     text-align: start;
     margin-left: 2rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .client {
+    div {
+      label {
+        text-align: start;
+      }
+    }
+  }
+  .livraison {
+    padding: 2rem;
+    div {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      margin-left: 0;
+      input {
+        margin: 5px 2rem;
+        background-color: aliceblue;
+        color: black;
+        font-weight: bold;
+        font-size: large;
+      }
+      label {
+        font-weight: bold;
+        font-size: large;
+      }
+    }
   }
 }

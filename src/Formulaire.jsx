@@ -48,6 +48,12 @@ const Formulaire = () => {
 
   return (
     <div>
+      <div className="header">
+        <h1>Univers Aquatique Livraison</h1>
+        <img className="logo" src="/livraison/no-pict.jpg" alt="No Pict" />
+
+        {/* <img className="logo" src="../../../public/no-pict.jpg" /> */}
+      </div>
       <form ref={formRef}>
         <section className="client">
           <h2>Informations Client</h2>

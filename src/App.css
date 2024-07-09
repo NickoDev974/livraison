@@ -45,7 +45,8 @@ section {
   background-color: white;
   border: rgb(6, 6, 6) 2px solid;
   border-radius: 20px;
-  margin: 2rem;
+  margin: 1rem; /* Reduce margin */
+  padding: 1rem; /* Add padding */
 }
 .header {
   display: flex;
@@ -54,7 +55,7 @@ section {
   align-items: center;
 }
 .client {
-  padding: 2rem;
+  padding: 1rem; /* Reduce padding */
   div {
     display: flex;
     flex-direction: column;
@@ -76,7 +77,7 @@ section {
   }
 }
 .livraison {
-  padding: 2rem;
+  padding: 1rem; /* Reduce padding */
   div {
     display: flex;
     flex-direction: column;
@@ -96,7 +97,7 @@ section {
   }
 }
 .juridique {
-  padding: 2rem;
+  padding: 1rem; /* Reduce padding */
   h2 {
     font-weight: bold;
   }
@@ -119,7 +120,7 @@ section {
     }
   }
   .livraison {
-    padding: 2rem;
+    padding: 1rem; /* Reduce padding */
     div {
       display: flex;
       flex-direction: column;
@@ -137,5 +138,70 @@ section {
         font-size: large;
       }
     }
+  }
+}
+@media print {
+  .page {
+    margin: 0;
+    padding: 10mm;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header,
+  .client,
+  .livraison,
+  .juridique {
+    page-break-inside: avoid;
+    margin: 0 auto;
+    padding: 10mm;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @page {
+    margin: 10mm;
+  }
+
+  .header {
+    margin-top: 10mm;
+    display: none;
+    text-align: center;
+  }
+
+  .logo {
+    display: none;
+    margin: 0 auto;
+  }
+  button {
+    display: none;
+  }
+
+  input,
+  textarea,
+  select,
+  label {
+    border: none;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p,
+  label,
+  input,
+  textarea,
+  select {
+    font-size: 1em;
+  }
+  section {
+    page-break-inside: avoid;
+    font-size: 6mm;
   }
 }

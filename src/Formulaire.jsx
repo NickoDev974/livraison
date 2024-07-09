@@ -47,14 +47,12 @@ const Formulaire = () => {
   const formRef = useRef();
 
   return (
-    <div>
+    <div ref={formRef}>
       <div className="header">
         <h1>Univers Aquatique Livraison</h1>
         <img className="logo" src="/livraison/no-pict.jpg" alt="No Pict" />
-
-        {/* <img className="logo" src="../../../public/no-pict.jpg" /> */}
       </div>
-      <form ref={formRef}>
+      <form>
         <section className="client">
           <h2>Informations Client</h2>
           <div>
@@ -126,7 +124,7 @@ const Formulaire = () => {
               name="appart"
             />
             <FormCheckbox
-              label="L'emplassement futur du produit est accessible "
+              label="L'emplacement futur du produit est accessible "
               checked={formData.acces}
               onChange={handleChange}
               name="acces"
